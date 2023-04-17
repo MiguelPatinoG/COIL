@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.contenedor {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(143, 236, 166);
+}
+
+.estrallas{
+    animation:rotar 2s;
+    height: 200px;
+}
+
+.barra{
+    margin: 100 auto;
+    height: 30px;
+    width: 160px;
+    background-color: rgb(146, 32, 76);
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 10px solid black;
+}
+
+.progreso{
+    display: block;
+    width: 0px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgb(230, 93, 93);
+}
+
+.cartas {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 253, 228);
+    width: fit-content;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.celda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 160px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seleccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.image {
+    display: block;
+    height: 160px;
+    margin: 0 auto;
+    width: 120px;
+}
+
+@keyframes rotar {
+
+    20%,
+    90% {
+        transform: rotateY(180deg);
+    }
+
+    0%,
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: darkgreen;
+}
+
+#tituloModal {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: darkgreen;
+}
+
+.temporizador {
+    font-family: 'Luckiest Guy', cursive;
+    color: darkgreen;
+    font-size: larger
+}
+
+span {
+    font-family: "Schoolbell";
+}
+
+.button {
+    font-family: "Schoolbell";
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ffa3a3;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+}
+
+.imageTabla {
+    width: 120px;
+    height: 170px;
+}
+
+body {
+    background-image: url(../img/background.png);
+}
+
+.boton-loteria {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 52px;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tablero{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.texto-boton {
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin: 0 auto;
+}
+
+.botonModal {
+    font-family: 'Luckiest Guy';
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    margin-left: 40%;
+    width: 100px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-evenly;
+}

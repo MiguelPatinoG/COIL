@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleJuego.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body class="bg-image">
+    <div class="contenedor">
+        <h1 id="titulo">Lotería</h1>
+        <div class="cronometro">
+            <div id="hms" class="temporizador"></div>
+            <div class="boton start" style="background-color: blue;"></div>
+            <div class="boton stop" style="background-color: blueviolet;"></div>
+            <div class="boton reiniciar" style="background-color: yellow;"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="cartas" id="contenedorTableroySeleccion" style="clear: both;">
+                    <div class="tablero">
+                        <div class="fila" id="fila1">
+                        </div>
+                        <div class="fila" id="fila2">
+                        </div>
+                        <div class="fila" id="fila3">
+                        </div>
+                    </div>
+                    <div class="seleccion" id="mazo" style="display: flex; flex-direction: column;">
+                        <div class="barra" id="barra"> <span class="progreso" id="barraProgreso"> </div>
+                        <br>
+                        <br>
+
+                        <div class="cell" draggable="true">
+                        </div>
+                    </div>
+                    <div class="boton-loteria">
+                        <p class="texto-boton">LOTERIA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal -->
+    
+    <div class="modal " tabindex="-1" id="modalFinal" >
+        <div class="modal-dialog modal-lg modal-dialog-centered" >
+          <div class="modal-content"style="background-color: rgb(255, 253, 228)">
+            <div class="modal-header" style="background-color: rgb(143, 236, 166);">
+              <h6 class="modal-title col-11 text-center" id="tituloModal" >FELICIDADES! HAS GANADO</h6>
+            </div>
+
+            <div class="modal-body">
+            <div class="container">
+                <!-- Estrellas Superior -->
+                <div class="row justify-content-md-center" id="CartasArriba">
+                    <div class="col col-lg-3">
+                        <img src="img/estrellaGanar.png" alt="a" class="estrallas" id="estrella5">
+                    </div>
+                    <div class="col col-lg-3">
+                        <img src="img/estrellaGanar.png" alt="a" class="estrallas" id="estrella4">
+                    </div>
+                    <div class="col col-lg-3">
+                        <img src="img/estrellaGanar.png" alt="a" class="estrallas" id="estrella3">
+                    </div>
+                </div>
+                <br>
+                <!-- Estrellas Abajo -->
+                <div class="row justify-content-md-center" id="CartasAbajo">
+                    <div class="col col-lg-3">
+                        <img src="img/estrellaGanar.png" alt="a" class="estrallas" id="estrella2">
+                    </div>
+                    <div class="col col-lg-3">
+                        <img src="img/estrellaGanar.png" alt="a" class="estrallas" id="estrella1">
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+            </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/generarCartas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.selected {
+  border: 4px solid #4caf50;
+  border-radius: 15%;
+}
+
+.option:hover{
+  cursor: pointer;
+}
+
+.option{
+  padding: 5px;
+}
+
+.buttonInicio {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.buttonInicio:hover {
+  background-color: #555;
+}
+.titulo{
+  width: 300px;
+}
+div {
+  display: grid;
+}
+
+body {
+  background-image: url(../img/background.png);
+}
