@@ -103,7 +103,7 @@ function sistemaRecompensa() {
   let padre1 = document.querySelector('.modal-body')
   padre1.appendChild(tiempoaca);
   document.querySelector('#reload').addEventListener('click', () => {
-    location.href = "inicio.html";
+    location.href = "index.html";
   });
 
   //5 estrellas solo colocar segundos en tempo ej= 1 minuto solo 60 o 1 minuto y medio 90
