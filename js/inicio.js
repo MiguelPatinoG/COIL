@@ -1,8 +1,15 @@
 const modalBtn = document.querySelector('#modalBtn');
 const miModal = new bootstrap.Modal(document.querySelector('#exampleModal'));
 
+const btnCreditos = document.querySelector('#btnCreditos');
+const modalCreditos = new bootstrap.Modal(document.querySelector('#modalCreditos'));
+
 modalBtn.addEventListener('click', () => {
   miModal.show();
+});
+
+btnCreditos.addEventListener('click', () => {
+  modalCreditos.show();
 });
 
 document.querySelector('#btn-selec').addEventListener('click', () => {

@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lotería</title>
+  <title>Loteria</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styleModal.css">
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!--   Pagina de inicio  -->
+  <!-- Pagina de inicio -->
   <div class="justify-content-center" style="padding: 20%;">
     <div style="padding-right: 5%;">
       <h1>¡Bienvenido/a!</h1>
     </div>
     <button type="button" class="buttonInicio" id="modalBtn">Play</button>
+    <button type="button" class="buttoncreditos" id="btnCreditos" style="margin-top: 10px;">Créditos</button>
   </div>
 
 
@@ -56,6 +57,25 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-close">Cerrar</button>
           <button type="button" class="btn btn-primary" id="btn-selec">Jugar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal cretidos -->
+  <div class="modal" tabindex="-1" id="modalCreditos">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">CRÉDITOS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Universidad de Antioquia - Equipo 8</p>
+          <p>Laura Correa Ochoa <br> Mariana Martinez Gaviria <br> Jhon Alexander Argaez Ibarra <br> Leandro Toro Lopez <br> Miguel Angel Patiño </p>
+          <p>ITSON</p>
+          <p>Maria Isabel Uriarte Sanchez <br> Esmeralda Yuliza Velásquez Valenzuela</p>
+          <p>Universidad de veracruz</p>
+          <p>Shalma Sinahí Maza Pavan <br> Asthrid Báez Salinas</p>
         </div>
       </div>
     </div>
