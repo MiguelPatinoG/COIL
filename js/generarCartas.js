@@ -99,7 +99,7 @@ function tomarTiempoFinal() {
 function sistemaRecompensa() {
   let tiempoaca = document.createElement('div');
   tiempoaca.classList.add('tiempo');
-  tiempoaca.innerHTML = `<h3 id="tituloModal">Tu tiempo es de: ${totaltiempo}</h3> <button id="reload" class="botonModal">Volver a jugar</button>`
+  tiempoaca.innerHTML = `<h3 id="tituloModal">Your time was: ${totaltiempo}</h3> <button id="reload" class="botonModal">Play again</button>`
   let padre1 = document.querySelector('.modal-body')
   padre1.appendChild(tiempoaca);
   document.querySelector('#reload').addEventListener('click', () => {
